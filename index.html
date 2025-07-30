@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/01168e14d7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+
+  <body>
+    <div
+      id="vanta-bg"
+      style="position: fixed; width: 100%; height: 100%; z-index: -1"
+    ></div>
+    <div id="header">
+      <div class="container">
+        <nav class="section">
+          <img src="images/image.png" class="logo" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="images/OmarAlakaraCV.pdf" download class="cv">My CV</a>
+            </li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i
+            class="fas fa-bars"
+            onclick="openmenu()"
+            style="margin-right: 10px"
+          ></i>
+        </nav>
+
+        <div class="row">
+          <div class="header-text">
+            <h1>
+              Hi, I'm <span>Omar</span><br />
+              Al-akara from lebanon
+            </h1>
+            <p class="cool-gradient">
+              <span id="animated-text">Full Stack Developer</span>
+            </p>
+          </div>
+
+          <div class="moving-image">
+            <script
+              src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
+              type="module"
+            ></script>
+
+            <dotlottie-wc
+              src="https://lottie.host/379ba264-b56f-4010-b971-acf95fa2f8a8/jN9p2IhM5N.lottie"
+              class="lottie"
+              style="width: 400px; height: 400px"
+              speed="1"
+              autoplay
+              loop
+            ></dotlottie-wc>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------ABOUT SECTION-->
+    <div id="about" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1"><img src="images/picture.jpg" /></div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Passionate Full Stack Developer with expertise in Shopify
+              development, store management, SEO, and E-commerce.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>E-commerce</span><br />Shopify Development, Theme
+                  Customization, Platform Management, A/B Testing, SEO
+                  optimization
+                </li>
+                <li>
+                  <span>Programming Languages</span><br />Java, PHP, Python,
+                  JavaScript
+                </li>
+                <li>
+                  <span>Web Development</span><br />HTML, CSS, JavaScript,
+                  Liquid
+                </li>
+                <li><span>Backend Development</span><br />Java, PHP, MySQL</li>
+                <li>
+                  <span>Tools</span><br />Agile Methodology, Jira, Git, Github
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Fazezero, Dubai (Remote) — Jan 2025 – Present</span
+                  ><br />
+                  Software Developer
+                </li>
+                <li>
+                  <span>CIS College, Lebanon (Onsite) — Feb 2025 – Present</span
+                  ><br />
+                  Computer Instructor
+                </li>
+                <li>
+                  <span>Sereni, London UK (Remote) — Jan 2025 – April 2025</span
+                  ><br />
+                  Shopify Developer
+                </li>
+                <li>
+                  <span
+                    >Save the Children, Lebanon (Onsite) — Feb 2024 – Dec
+                    2024</span
+                  ><br />
+                  IT Facilitator
+                </li>
+                <li>
+                  <span>Loyabi, Lebanon (Remote) — May 2022 – Jan 2024</span
+                  ><br />
+                  Website Administrator
+                </li>
+                <li>
+                  <span>Private Tutor, Lebanon — Oct 2020 – Jun 2022</span
+                  ><br />
+                  STEM & Computer Science Tutor
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >Lebanese International University – Bekaa Campus, Lebanon —
+                    2021 – 2024</span
+                  ><br />
+                  Bachelor of Science in Computer Engineering
+                </li>
+                <li><span>GPA:</span> 3.18 / 4.0</li>
+                <li>
+                  <span>Key Courses:</span> Data Structures, OOP, DBMS, Web
+                  Development, Networks, OS, Electronics
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------Services------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Dervelopment</h2>
+            <p>
+              Crafting responsive, user-friendly websites tailored to your
+              brand's identity, ensuring seamless navigation and aesthetic
+              appeal.
+            </p>
+            <!-- <a href="#">learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-shopify"></i>
+            <h2>Shopify Development</h2>
+            <p>
+              Building and customizing Shopify stores that boost sales, optimize
+              user experience, and simplify management for online businesses.
+            </p>
+            <!-- <a href="#">learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-arrow-up-right-dots"></i>
+            <h2>SEO Specialast</h2>
+            <p>
+              Improving your website's visibility through targeted SEO
+              strategies, keyword research, and on-page optimization to increase
+              organic traffic.
+            </p>
+            <!-- <a href="#">learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------Portfolio------------------------->
+    <div id="portfolio" class="section">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1.png" alt="" />
+            <div class="layer">
+              <h3>Otlob Market Place - Ecommerce Platform</h3>
+              <p>
+                Built a dynamic e-commerce platform using HTML, CSS, JavaScript,
+                and PHP. Features include product browsing, secure user
+                authentication, and real-time order tracking to streamline the
+                shopping experience.
+              </p>
+              <a
+                href="https://github.com/omaralakara/Otlob-Marketplace"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.png" alt="" />
+            <div class="layer">
+              <h3>Shopify E-commerce Store</h3>
+              <p>
+                Developed a sleek and responsive online store using Shopify to
+                showcase modern apparel and lifestyle products. Focused on
+                delivering a smooth user experience across devices with clean UI
+                design, product filtering, and seamless navigation. Ideal for
+                showcasing proficiency in platform-based ecommerce development
+                and theme customization.
+              </p>
+              <a href="https://loyabi.com/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work3.png" alt="" />
+            <div class="layer">
+              <h3>Omnifood Landing Page - Responsive Front-End</h3>
+              <p>
+                Developed a fully responsive and modern landing page for a
+                fictional food subscription service using HTML and CSS. The
+                design features smooth navigation, visually engaging layouts,
+                and clean sectioning across multiple components such as feature
+                highlights, testimonials, pricing plans, and call-to-action
+                forms. Inspired by real-world SaaS landing pages to practice
+                UI/UX fundamentals.
+              </p>
+              <a href="https://github.com/omaralakara/omni-food" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-------------------------Contact------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>omar.alakara3@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+961 71 384 052</p>
+            <div class="social-icons">
+              <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="facebook.com"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a href="facebook.com"><i class="fa-brands fa-instagram"></i></a>
+              <a href="facebook.com"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="facebook.com"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p>
+          &copy; 2025 Omar Alakara. All rights reserved.
+          <i class="fas fa-heart"></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const titles = [
+        "Shopify Developer",
+        "Full Stack Developer",
+        "E-commerce Specialist",
+      ];
+
+      const textElement = document.getElementById("animated-text");
+
+      let titleIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function type() {
+        const currentText = titles[titleIndex];
+        const fullLength = currentText.length;
+
+        if (isDeleting) {
+          charIndex--;
+          textElement.textContent = currentText.substring(0, charIndex);
+        } else {
+          charIndex++;
+          textElement.textContent = currentText.substring(0, charIndex);
+        }
+
+        let speed = isDeleting ? 50 : 100;
+
+        if (!isDeleting && charIndex === fullLength) {
+          speed = 1500; // pause at full word
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          titleIndex = (titleIndex + 1) % titles.length;
+          speed = 500; // pause before typing new word
+        }
+
+        setTimeout(type, speed);
+      }
+
+      type();
+    </script>
+
+    <script>
+      VANTA.NET({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x00bfff,
+        backgroundColor: 0x000000,
+      });
+    </script>
+  </body>
+</html>
